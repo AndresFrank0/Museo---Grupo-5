@@ -486,6 +486,9 @@ BEFORE INSERT OR UPDATE ON HIST_CARGO
 FOR EACH ROW
 EXECUTE FUNCTION prevenir_duplicado_hist_cargo();
 
+
+
+
 --Inserts
 INSERT INTO LUGAR (id_lugar, nombre, tipo, continente, id_lugar_padre) VALUES
 ('Holanda', 'P', 'EU', NULL),
@@ -498,4 +501,15 @@ INSERT INTO LUGAR (id_lugar, nombre, tipo, continente, id_lugar_padre) VALUES
 ('Caen', 'C', 'EU', 3),
 ('Berlin', 'C', 'EU', 4);
 
+INSERT INTO MUSEO (nombre, fecha_fund, descripcion_museo) VALUES
+('Museo Van Gogh', '02-06-1971', 'La misión del Museo Van Gogh es hacer la vida y obra de Vincent van Gogh y el arte de su tiempo accesibles a la mayor cantidad de personas posible. Buscan enriquecer e inspirar a una audiencia diversa. El museo se enfoca en cuidar, exhibir, investigar y expandir su colección para las futuras generaciones.'),
+('Museo Casa de Rembrandt', '10-06-1911', 'El Museo Casa de Rembrandt busca sumergir al visitante en la vida y obra del maestro holandés. Preserva y exhibe la casa donde vivió y trabajó, junto con una importante colección de sus grabados. Su objetivo es inspirar y fomentar un mayor interés en el extraordinario legado cultural de Rembrandt.'),
 
+('Natural History Museum de Londres', '18-04-1881', 'La misión del Museo de Historia Natural de Londres es inspirar una apreciación más profunda de la naturaleza y nuestra relación con ella. Para lograrlo, se dedica a mantener y desarrollar sus colecciones de talla mundial, utilizándolas para impulsar la investigación científica y la educación pública. '),
+('National Gallery de Londres', '10-05-1824', 'La misión de la National Gallery de Londres se centra en la preservación y enriquecimiento de su invaluable colección de pinturas, asegurando que este patrimonio artístico perdure para las futuras generaciones. Simultáneamente, busca garantizar el acceso universal a estas obras, permitiendo que un público diverso las explore y disfrute con propósitos educativos y de ocio. '),
+
+('Musée d’Histoire Naturelle de La Rochelle', '30-04-1832', 'La misión del Musée d''Histoire Naturelle de La Rochelle es ofrecer una perspectiva única sobre la naturaleza local y global, uniendo la historia natural con la etnografía. Busca inspirar la comprensión del territorio y las diversas culturas a través de sus extensas colecciones, promoviendo el conocimiento científico y la educación para todos los públicos.'),
+('Musée de Normandie', '05-07-1946', 'La misión del Musée de Normandie es preservar y exhibir el patrimonio histórico y etnográfico de Normandía, desde la prehistoria hasta la actualidad. Se esfuerza por promover una comprensión profunda de la identidad regional, sus paisajes, sus habitantes y sus actividades a través de sus colecciones.'),
+
+('Aster 3D TrickArt', '03-08-2024', 'La misión de Aster 3D TrickArt es crear experiencias inmersivas y divertidas a través del arte tridimensional que juega con la percepción visual. Busca desafiar la imaginación de los visitantes y fomentar la interacción con las obras, permitiéndoles formar parte activa de las ilusiones.'),
+('Museo de Pérgamow', '26-09-1910', 'La misión del Museo de Pérgamo es preservar y exhibir colecciones de arte y arquitectura de la antigüedad y el Cercano Oriente, así como arte islámico. Se enfoca en presentar estas culturas en su contexto histórico y cultural, permitiendo a los visitantes una inmersión profunda en civilizaciones pasadas. ');
