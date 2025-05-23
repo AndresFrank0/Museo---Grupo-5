@@ -486,7 +486,6 @@ BEFORE INSERT OR UPDATE ON HIST_CARGO
 FOR EACH ROW
 EXECUTE FUNCTION prevenir_duplicado_hist_cargo();
 
---Holips
 
 
 --Inserts
