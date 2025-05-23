@@ -486,8 +486,6 @@ BEFORE INSERT OR UPDATE ON HIST_CARGO
 FOR EACH ROW
 EXECUTE FUNCTION prevenir_duplicado_hist_cargo();
 
-
-
 --Inserts
 INSERT INTO LUGAR (id_lugar, nombre, tipo, continente, id_lugar_padre) VALUES
 ('Holanda', 'P', 'EU', NULL),
